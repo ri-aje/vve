@@ -96,61 +96,61 @@ vnoremap <leader>dJ :<c-u>call vve#encode#VisualDecodeJSON(visualmode())<CR>
 vnoremap <leader>dx :<c-u>call vve#encode#VisualDecodeXml(visualmode())<CR>
 vnoremap <leader>dX :<c-u>call vve#encode#VisualDecodeHtmlFull(visualmode())<CR>
 
-vnoremap <leader>Eb :<c-u>call vve#encode#VisualEncodeBinaryFromAscii(visualmode())<CR>
-vnoremap <leader>EB :<c-u>call vve#encode#VisualEncodeBase64FromAscii(visualmode())<CR>
-vnoremap <leader>Eh :<c-u>call vve#encode#VisualEncodeHexFromAscii(visualmode())<CR>
-vnoremap <leader>EH :<c-u>call vve#encode#VisualEncodeHexStringFromAscii(visualmode())<CR>
-vnoremap <leader>Ee :<c-u>call vve#encode#VisualEncodeHtmlFullFromAscii(visualmode())<CR>
-vnoremap <leader>EE :<c-u>call vve#encode#VisualEncodeHtmlFullFromAscii(visualmode())<CR>
-vnoremap <leader>Eu :<c-u>call vve#encode#VisualEncodeURLFromAscii(visualmode())<CR>
-vnoremap <leader>EU :<c-u>call vve#encode#VisualEncodeURLFullFromAscii(visualmode())<CR>
-vnoremap <leader>Ex :<c-u>call vve#encode#VisualEncodeXmlFullFromAscii(visualmode())<CR>
-vnoremap <leader>EX :<c-u>call vve#encode#VisualEncodeXmlFullFromAscii(visualmode())<CR>
+" vnoremap <leader>Eb :<c-u>call vve#encode#VisualEncodeBinaryFromAscii(visualmode())<CR>
+" vnoremap <leader>EB :<c-u>call vve#encode#VisualEncodeBase64FromAscii(visualmode())<CR>
+" vnoremap <leader>Eh :<c-u>call vve#encode#VisualEncodeHexFromAscii(visualmode())<CR>
+" vnoremap <leader>EH :<c-u>call vve#encode#VisualEncodeHexStringFromAscii(visualmode())<CR>
+" vnoremap <leader>Ee :<c-u>call vve#encode#VisualEncodeHtmlFullFromAscii(visualmode())<CR>
+" vnoremap <leader>EE :<c-u>call vve#encode#VisualEncodeHtmlFullFromAscii(visualmode())<CR>
+" vnoremap <leader>Eu :<c-u>call vve#encode#VisualEncodeURLFromAscii(visualmode())<CR>
+" vnoremap <leader>EU :<c-u>call vve#encode#VisualEncodeURLFullFromAscii(visualmode())<CR>
+" vnoremap <leader>Ex :<c-u>call vve#encode#VisualEncodeXmlFullFromAscii(visualmode())<CR>
+" vnoremap <leader>EX :<c-u>call vve#encode#VisualEncodeXmlFullFromAscii(visualmode())<CR>
 
-vnoremap <leader>Db :<c-u>call vve#encode#VisualDecodeBinaryToAscii(visualmode())<CR>
-vnoremap <leader>DB :<c-u>call vve#encode#VisualDecodeBase64ToAscii(visualmode())<CR>
-vnoremap <leader>Dh :<c-u>call vve#encode#VisualDecodeHexToAscii(visualmode())<CR>
-vnoremap <leader>DH :<c-u>call vve#encode#VisualDecodeHexStringToAscii(visualmode())<CR>
-vnoremap <leader>Du :<c-u>call vve#encode#VisualDecodeURLToAscii(visualmode())<CR>
-vnoremap <leader>DU :<c-u>call vve#encode#VisualDecodeURLFullToAscii(visualmode())<CR>
-vnoremap <leader>De :<c-u>call vve#encode#VisualDecodeHtmlFullToAscii(visualmode())<CR>
-vnoremap <leader>DE :<c-u>call vve#encode#VisualDecodeHtmlFullToAscii(visualmode())<CR>
-vnoremap <leader>Dx :<c-u>call vve#encode#VisualDecodeXmlFullToAscii(visualmode())<CR>
-vnoremap <leader>DX :<c-u>call vve#encode#VisualDecodeXmlFullToAscii(visualmode())<CR>
+" vnoremap <leader>Db :<c-u>call vve#encode#VisualDecodeBinaryToAscii(visualmode())<CR>
+" vnoremap <leader>DB :<c-u>call vve#encode#VisualDecodeBase64ToAscii(visualmode())<CR>
+" vnoremap <leader>Dh :<c-u>call vve#encode#VisualDecodeHexToAscii(visualmode())<CR>
+" vnoremap <leader>DH :<c-u>call vve#encode#VisualDecodeHexStringToAscii(visualmode())<CR>
+" vnoremap <leader>Du :<c-u>call vve#encode#VisualDecodeURLToAscii(visualmode())<CR>
+" vnoremap <leader>DU :<c-u>call vve#encode#VisualDecodeURLFullToAscii(visualmode())<CR>
+" vnoremap <leader>De :<c-u>call vve#encode#VisualDecodeHtmlFullToAscii(visualmode())<CR>
+" vnoremap <leader>DE :<c-u>call vve#encode#VisualDecodeHtmlFullToAscii(visualmode())<CR>
+" vnoremap <leader>Dx :<c-u>call vve#encode#VisualDecodeXmlFullToAscii(visualmode())<CR>
+" vnoremap <leader>DX :<c-u>call vve#encode#VisualDecodeXmlFullToAscii(visualmode())<CR>
 
 
 " number conversion and inplace arithmetic
-nnoremap <leader>th :set operatorfunc=vve#numbers#VisualToHex<CR>g@
-nnoremap <leader>tH :set operatorfunc=vve#numbers#VisualToHexString<CR>g@
-nnoremap <leader>tb :set operatorfunc=vve#numbers#VisualToBin<CR>g@
-nnoremap <leader>to :set operatorfunc=vve#numbers#VisualToOct<CR>g@
-nnoremap <leader>td :set operatorfunc=vve#numbers#VisualToDec<CR>g@
-nnoremap <leader>ma :set operatorfunc=vve#numbers#VisualInPlaceAdd<CR>g@
-nnoremap <leader>ms :set operatorfunc=vve#numbers#VisualInPlaceSub<CR>g@
-nnoremap <leader>mm :set operatorfunc=vve#numbers#VisualInPlaceMul<CR>g@
-nnoremap <leader>md :set operatorfunc=vve#numbers#VisualInPlaceDiv<CR>g@
+" nnoremap <leader>th :set operatorfunc=vve#numbers#VisualToHex<CR>g@
+" nnoremap <leader>tH :set operatorfunc=vve#numbers#VisualToHexString<CR>g@
+" nnoremap <leader>tb :set operatorfunc=vve#numbers#VisualToBin<CR>g@
+" nnoremap <leader>to :set operatorfunc=vve#numbers#VisualToOct<CR>g@
+" nnoremap <leader>td :set operatorfunc=vve#numbers#VisualToDec<CR>g@
+" nnoremap <leader>ma :set operatorfunc=vve#numbers#VisualInPlaceAdd<CR>g@
+" nnoremap <leader>ms :set operatorfunc=vve#numbers#VisualInPlaceSub<CR>g@
+" nnoremap <leader>mm :set operatorfunc=vve#numbers#VisualInPlaceMul<CR>g@
+" nnoremap <leader>md :set operatorfunc=vve#numbers#VisualInPlaceDiv<CR>g@
 
 vnoremap <leader>th :<c-u>call vve#numbers#VisualToHex(visualmode())<CR>
 vnoremap <leader>tH :<c-u>call vve#numbers#VisualToHexString(visualmode())<CR>
 vnoremap <leader>tb :<c-u>call vve#numbers#VisualToBin(visualmode())<CR>
 vnoremap <leader>to :<c-u>call vve#numbers#VisualToOct(visualmode())<CR>
 vnoremap <leader>td :<c-u>call vve#numbers#VisualToDec(visualmode())<CR>
-vnoremap <leader>ma :<c-u>call vve#numbers#VisualInPlaceAdd(visualmode())<CR>
-vnoremap <leader>ms :<c-u>call vve#numbers#VisualInPlaceSub(visualmode())<CR>
-vnoremap <leader>mm :<c-u>call vve#numbers#VisualInPlaceMul(visualmode())<CR>
-vnoremap <leader>md :<c-u>call vve#numbers#VisualInPlaceDiv(visualmode())<CR>
+" vnoremap <leader>ma :<c-u>call vve#numbers#VisualInPlaceAdd(visualmode())<CR>
+" vnoremap <leader>ms :<c-u>call vve#numbers#VisualInPlaceSub(visualmode())<CR>
+" vnoremap <leader>mm :<c-u>call vve#numbers#VisualInPlaceMul(visualmode())<CR>
+" vnoremap <leader>md :<c-u>call vve#numbers#VisualInPlaceDiv(visualmode())<CR>
 
 " other util functions
-nnoremap <leader>se :set operatorfunc=vve#strings#VisualSwapEndian<CR>g@
-nnoremap <leader>sc :set operatorfunc=vve#strings#VisualLength<CR>g@
-nnoremap <leader>sC :set operatorfunc=vve#strings#VisualLengthHexString<CR>g@
-nnoremap <leader>sn :set operatorfunc=vve#strings#VisualLineLength<CR>g@
-nnoremap <leader>su :set operatorfunc=vve#strings#VisualUpper<CR>g@
-nnoremap <leader>sl :set operatorfunc=vve#strings#VisualLower<CR>g@
-nnoremap <leader>fc :set operatorfunc=vve#strings#VisualCamelCase<CR>g@
-nnoremap <leader>fs :set operatorfunc=vve#strings#VisualSnakeCase<CR>g@
-nnoremap <leader>fm :set operatorfunc=vve#strings#VisualMarkdownAnchor<CR>g@
-nnoremap <leader>fM :set operatorfunc=vve#strings#VisualMarkdownAnchorReference<CR>g@
+" nnoremap <leader>se :set operatorfunc=vve#strings#VisualSwapEndian<CR>g@
+" nnoremap <leader>sc :set operatorfunc=vve#strings#VisualLength<CR>g@
+" nnoremap <leader>sC :set operatorfunc=vve#strings#VisualLengthHexString<CR>g@
+" nnoremap <leader>sn :set operatorfunc=vve#strings#VisualLineLength<CR>g@
+" nnoremap <leader>su :set operatorfunc=vve#strings#VisualUpper<CR>g@
+" nnoremap <leader>sl :set operatorfunc=vve#strings#VisualLower<CR>g@
+" nnoremap <leader>fc :set operatorfunc=vve#strings#VisualCamelCase<CR>g@
+" nnoremap <leader>fs :set operatorfunc=vve#strings#VisualSnakeCase<CR>g@
+" nnoremap <leader>fm :set operatorfunc=vve#strings#VisualMarkdownAnchor<CR>g@
+" nnoremap <leader>fM :set operatorfunc=vve#strings#VisualMarkdownAnchorReference<CR>g@
 
 vnoremap <leader>se :<c-u>call vve#strings#VisualSwapEndian(visualmode())<CR>
 vnoremap <leader>sc :<c-u>call vve#strings#VisualLength(visualmode())<CR>
@@ -158,8 +158,8 @@ vnoremap <leader>sC :<c-u>call vve#strings#VisualLengthHexString(visualmode())<C
 vnoremap <leader>su :<c-u>call vve#strings#VisualUpper(visualmode())<CR>
 vnoremap <leader>sl :<c-u>call vve#strings#VisualLower(visualmode())<CR>
 vnoremap <leader>sn :<c-u>call vve#strings#VisualLineLength(visualmode())<CR>
-vnoremap <leader>fc :<c-u>call vve#strings#VisualCamelCase(visualmode())<CR>
-vnoremap <leader>fs :<c-u>call vve#strings#VisualSnakeCase(visualmode())<CR>
+" vnoremap <leader>fc :<c-u>call vve#strings#VisualCamelCase(visualmode())<CR>
+" vnoremap <leader>fs :<c-u>call vve#strings#VisualSnakeCase(visualmode())<CR>
 vnoremap <leader>fm :<c-u>call vve#strings#VisualMarkdownAnchor(visualmode())<CR>
 vnoremap <leader>fM :<c-u>call vve#strings#VisualMarkdownAnchorReference(visualmode())<CR>
 
